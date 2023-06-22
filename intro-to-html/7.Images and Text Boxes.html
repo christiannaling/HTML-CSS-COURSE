@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images and Text Boxes</title>
+    <style>
+        .cat{
+            width: 200px;
+            border-radius: 10px;
+        }
+        .cat2{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .cat3{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 100px;
+        }
+        .rounded-corners{
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 5px;
+            width: 150px;
+            padding: 5px 30px 5px 10px;
+        }
+        .shadow-noborder{
+            border-style: solid;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 80px 10px 10px;
+            box-shadow: 1px 1px 1px 1px rgba(197, 197, 197, 0.639);
+            width: 200px;
+        }
+        .email{
+            font-size: 10px;
+            color: gray;
+            margin-bottom: 5px;
+        }
+        .linkedin{
+            border-color: black;
+            border-style: solid;
+            border-radius: 4px;
+            border-width: 1px;
+            padding-right: 75px;
+            margin-bottom: 5px;
+        }
+        .privacy-policy{
+            font-size: 10px;
+            color: gray;
+            width: 240px;
+            margin: 0 0 5 0;
+            text-align: center;
+        }
+        .agree-btn{
+            background-color: rgb(29, 155, 240);
+            color: white;
+            padding: 7px 82px 7px 82px;
+            border-radius: 28px;
+            border: none;
+        }
+        .profile{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 20px;
+            vertical-align: middle;
+        }
+        .happening{
+            border: none;
+            color: gray;
+            vertical-align: middle;
+        }
+        .tweet-btn{
+            background-color: rgb(29, 155, 240);
+            color: white;
+            padding: 5px 10px 5px 10px;
+            border: none;
+            border-radius: 20px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <p>7a. Load the image, set width to 200px and add rounded corners</p>
+    <img class="cat" src="olli-the-polite-cat.jpg">
+    <p>7b. Make the image a square, center the image within the square</p>
+    <img class="cat2" src="olli-the-polite-cat.jpg">
+    <p>7c. Make the image a circle</p>
+    <img class="cat3" src="olli-the-polite-cat.jpg">
+    <p>7d. With rounded corners</p>
+    <input class="rounded-corners" type="text" placeholder="Search"> 
+    <p>7e. With a shadow, and no border</p>
+    <input class="shadow-noborder" type="text" placeholder="Search Google or type a URL">
+    <p>7f. LinkedIn signup</p>
+    <p class="email">Email</p>
+    <input class="linkedin" type="text">
+    <p class="privacy-policy">By clicking Agree & Join, you agree to the Privacy Polciy.</p>
+    <button class="agree-btn">Agree & Join</button>
+    <p>7g. Twitter text box</p>
+    <img class="profile" src="olli-the-polite-cat.jpg">
+    <input class="happening" type="text" placeholder="What's happening?">
+    <button class="tweet-btn">Tweet</button>
+</body>
+</html>

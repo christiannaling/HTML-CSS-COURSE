@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Element</title>
+
+    <style>
+        .red-square{
+            background-color: red;
+            border: none;
+            height: 100px;
+            width: 100px;
+        }
+        .green-circle{
+            background-color: green;
+            border: none;
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+        }
+        .nine-c-div{
+            border-width: 1px;
+            border-style: solid;
+            border-color: gray;
+            height: 90px;
+            width: 300px;
+        }
+        .nine-c-description{
+            margin-left: 15px;
+            display: block
+        }
+        .yes-btn{
+            display: inline-block;
+            margin-left: 15px;
+        }
+        .no-btn{
+            display: inline-block;
+            margin-left: 8px;
+        }
+        .nine-d-div{
+            background-color: rgb(43, 43, 43);
+            color: white;
+            border: none;
+            width: 370px;
+            height: 100px;
+        }
+        .nine-d-title{
+            font-size: 25px;
+            padding-top: 10px;
+            margin: 0px 0px 0px 15px;
+        }
+        .nine-d-description{
+            margin: 10px 0px 0px 15px;;
+            color: gray;
+        }
+        .nine-e-div{
+            display: block;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+            height: 70px;
+            width: 350px;
+        }
+        .nine-e-cat{
+            display: inline-block;
+            vertical-align: middle;
+            height: 50px;
+            width: 50px;
+            margin: 10px 10px 10px 10px;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+        .nine-e-input{
+            border: none;
+        }
+        .tweet-btn{
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 30px;
+            background-color: rgb(29, 155, 240);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 5px 10px 5px 10px;
+        }
+        .nine-f-div{
+            width: 170px;
+            height: 270px;
+            border: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+        .nine-f-cat{
+            height: 170px;
+            width: 170px;
+            object-fit: cover;
+            display: block;
+        }
+        .cat-name{
+            font-weight: bold;
+            margin: 8px 0px 0px 5px;
+        }
+        .mutual-friends{
+            margin: 8px 0px 0px 5px;
+            color: gray;
+        }
+        .addfriend-btn{
+            background-color: rgb(29, 155, 240);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 20px 8px 20px;
+            margin: 8px 0px 0px 5px;
+
+        }
+        .nine-g-div-one{
+            width: 170px;
+            height: 270px;
+            border: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            margin: 8px 8px 8px 8px;
+        }
+        .nine-g-cat-one{
+            height: 170px;
+            width: 170px;
+            object-fit: cover;
+            display: block;
+        }
+        .cat-name-one{
+            font-weight: bold;
+            margin: 8px 0px 0px 5px;
+        }
+        .mutual-friends-one{
+            margin: 8px 0px 0px 5px;
+            color: gray;
+        }
+        .addfriend-one-btn{
+            background-color: rgb(29, 155, 240);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 20px 8px 20px;
+            margin: 8px 0px 0px 5px;
+        }
+        .nine-g-div-two{
+            width: 170px;
+            height: 270px;
+            border: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            margin: 8px 8px 8px 8px;
+        }
+        .nine-g-cat-two{
+            height: 170px;
+            width: 170px;
+            object-fit: cover;
+            display: block;
+        }
+        .cat-name-two{
+            font-weight: bold;
+            margin: 8px 0px 0px 5px;
+        }
+        .mutual-friends-two{
+            margin: 8px 0px 0px 5px;
+            color: gray;
+        }
+        .addfriend-two-btn{
+            background-color: rgb(29, 155, 240);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 20px 8px 20px;
+            margin: 8px 0px 0px 5px;
+        }
+        .nine-g-div-three{
+            width: 170px;
+            height: 270px;
+            border: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            margin: 8px 8px 8px 8px;
+        }
+        .nine-g-cat-three{
+            height: 170px;
+            width: 170px;
+            object-fit: cover;
+            display: block;
+        }
+        .cat-name-three{
+            font-weight: bold;
+            margin: 8px 0px 0px 5px;
+        }
+        .mutual-friends-three{
+            margin: 8px 0px 0px 5px;
+            color: gray;
+        }
+        .addfriend-three-btn{
+            background-color: rgb(29, 155, 240);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 20px 8px 20px;
+            margin: 8px 0px 0px 5px;
+        }
+        .google-img{
+            height: 100px;
+            margin-left: 200px;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .google-input{
+            width: 450px;
+            margin-left: 125px;
+            padding: 8px 0px 8px 18px;
+            border: none;
+            border-radius: 16px;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+            display: block;
+        }
+        .google-search-btn{
+            background-color: lightgray;
+            color: black;
+            border: none;
+            display: inline-block;
+            padding: 8px 20px 8px 20px;
+            margin-top: 30px;
+            margin-left: 220px;
+        }
+        .feeling-lucky-btn{
+            background-color: lightgray;
+            color: black;
+            border: none;
+            display: inline-block;
+            padding: 8px 20px 8px 20px;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <p>
+        9a. Create a div and turn it into a red square
+    </p>
+    <div class="red-square">
+
+    </div>
+
+    <p>
+        9b. Create a div and turn it into a green circle
+    </p>
+    <div class="green-circle">
+
+    </div>
+
+    <p>
+        9c. Recreate this design by wrapping the elements in a div and adding a border
+    </p>
+    <div class="nine-c-div">
+        <p class="nine-c-description">
+            Satisfied with our service?
+        </p>
+        <button class="yes-btn">
+            Yes
+        </button>
+        <button class="no-btn">
+            No
+        </button>
+    </div>
+
+    <p>
+        9d. Recreate this design using a div with 2 paragraphs inside
+    </p>
+    <div class="nine-d-div">
+        <p class="nine-d-title">
+            Install Youtube Music
+        </p>
+        <p class="nine-d-description">
+            Add YouTube Music to your desktop for quick and easy access
+        </p>
+    </div>
+    
+    <p>
+        9e. Take the design created in exercise 7g. Wrapt it in a div and give it a shadow
+    </p>
+    <div class="nine-e-div">
+        <img class="nine-e-cat" src="olli-the-polite-cat.jpg">
+        <input class="nine-e-input" type="text" placeholder="What's happening?">
+        <button class="tweet-btn">
+            Tweet
+        </button>
+    </div>
+
+    <p>
+        9f. Recreate this design
+    </p>
+    <div class="nine-f-div">
+        <img class="nine-f-cat" src="olli-the-polite-cat.jpg">
+        <p class="cat-name">
+            Oliver
+        </p>
+        <p class="mutual-friends">
+            2 mutual friends
+        </p>
+        <button class="addfriend-btn">
+            Add Friend
+        </button>
+    </div>
+    <p>
+        9g. For exercise 9f. set display: inline-block on the div, and duplicate the desgin a few times (you can use different images than me)
+    </p>
+    <div class="nine-g-div-one">
+        <img class="nine-g-cat-one" src="olli-the-polite-cat.jpg">
+        <p class="cat-name-one">
+            Beluga
+        </p>
+        <p class="mutual-friends-one">
+            2 mutual friends
+        </p>
+        <button class="addfriend-one-btn">
+            Add Friend
+        </button>
+    </div>
+    <div class="nine-g-div-two">
+        <img class="nine-g-cat-two" src="210602-doge-meme-nft-mb-1715-8afb7e.jpg">
+        <p class="cat-name-two">
+            Oliver
+        </p>
+        <p class="mutual-friends-two">
+            3 mutual friends
+        </p>
+        <button class="addfriend-two-btn">
+            Add Friend
+        </button>
+    </div>
+    <div class="nine-g-div-three">
+        <img class="nine-g-cat-three" src="images.jfif">
+        <p class="cat-name-three">
+            Mr. Increduble
+        </p>
+        <p class="mutual-friends-three">
+            4mutual friends
+        </p>
+        <button class="addfriend-three-btn">
+            Add Friend
+        </button>
+    </div>
+
+    <p>
+        9h. Continuing from exercise8c. we'll finish the Google Search design
+    </p>
+    <div>
+        <img class="google-img" src="Google Image.png">
+        <input class="google-input" type="text" placeholder="Search Google or type a URL">
+        <button class="google-search-btn">
+            Google Search
+        </button>
+        <button class="feeling-lucky-btn">
+            I'm Feeling Lucky
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .page{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 490px;
+            padding: 15px 15px 15px 15px;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+            column-gap: 10px;
+        }
+        .profile{
+            display: grid;
+            border: none;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+        .profile-picture{
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            font-weight: bold;
+        }
+        .name{
+            font-size: 16px;
+            font-weight: bold;
+            margin: 8px 8px 8px 8px;
+        }
+        .mutual-friend-row{
+            display: grid;
+            grid-template-columns: 35px 1fr;
+            align-items: center;
+        }
+        .mutual-picture{
+            height: 20px;
+            width: 20px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 0px 5px 8px 8px;
+        }
+        .mutual-text{
+            font-size: 12px;
+            color: rgb(106, 106, 106);
+            margin: 0;
+        }
+        .add-friend-btn{
+            background-color: rgb(41, 118, 211);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin: 0px 5px 8px 8px;
+            padding: 8px 12px 8px 12px;
+        }
+    </style>
+</head>
+<body>
+    11a. Create a grid with 2 columns with widths of 200px and 75px
+    <div style="display: grid;
+    grid-template-columns: 200px 75px;">
+        <div style="background-color: lightblue;">
+            200px
+        </div>
+        <div style="background-color: lightpink;">
+            75px
+        </div>
+    </div>
+    11b. Create a grid with 3 columns. Widths = 50px | remaining space | 75px
+    <div style="display: grid;
+    grid-template-columns: 50px 1fr 75px;">
+        <div style="background-color: lightblue;">
+            co1
+        </div>
+        <div style="background-color: lightpink;">
+            col2
+        </div>
+        <div style="background-color: lightblue;">
+            col3
+        </div>
+    </div>
+    11c. Create agrid with 4 equal colums that make take up the entire page. Space between columns = 20px, space between rows = 20px
+    <div style="display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;">
+        <div style="background-color: lightpink;">
+            col1
+        </div>
+        <div style="background-color: lightpink;">
+            col2
+        </div>
+        <div style="background-color: lightpink;">
+            col3
+        </div>
+        <div style="background-color: lightpink;">
+            col4
+        </div>
+        <div style="background-color: lightpink;">
+            col1
+        </div>
+        <div style="background-color: lightpink;">
+            col2
+        </div>
+        <div style="background-color: lightpink;">
+            col3
+        </div>
+        <div style="background-color: lightpink;">
+            col4
+        </div>
+    </div>
+    11d. Continuing from exersize 10e. Create this design using CSS Grid
+    <div class="page">
+        <div class="profile">
+            <div>
+                <img class="profile-picture" src="olli-the-polite-cat.jpg">
+                <p class="name">
+                    Oliver
+                </p>
+            </div>
+            <div class="mutual-friend-row">
+                <img class="mutual-picture" src="210602-doge-meme-nft-mb-1715-8afb7e.jpg">
+                <p class="mutual-text">
+                    2 mutual friends
+                </p>
+            </div>
+            <div>
+                <button class="add-friend-btn">
+                    Add Friend
+                </button>
+            </div>
+        </div>
+        <div class="profile">
+            <div>
+                <img class="profile-picture" src="210602-doge-meme-nft-mb-1715-8afb7e.jpg">
+                <p class="name">
+                    Mimi
+                </p>
+            </div>
+            <div class="mutual-friend-row">
+                <img class="mutual-picture" src="olli-the-polite-cat.jpg">
+                <p class="mutual-text">
+                    3 mutual friends
+                </p>
+            </div>
+            <div>
+                <button class="add-friend-btn">
+                    Add Friend
+                </button>
+            </div>
+        </div>
+        <div class="profile">
+            <div>
+                <img class="profile-picture" src="images.jfif">
+                <p class="name">
+                    Rex
+                </p>
+            </div>
+            <div class="mutual-friend-row">
+                <img class="mutual-picture" src="210602-doge-meme-nft-mb-1715-8afb7e.jpg">
+                <p class="mutual-text">
+                    4 mutual friends
+                </p>
+            </div>
+            <div>
+                <button class="add-friend-btn">
+                    Add Friend
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

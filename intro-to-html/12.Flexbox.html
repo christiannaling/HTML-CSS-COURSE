@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            border-style: solid;
+            border-color: darkgray;
+            border-width: 1px;
+            border-radius: 4px;
+            padding: 5px;
+            width: 350px;
+        }
+        .flex-box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 12px 6px 12px;
+            font-family: Arial;
+        }
+        .notif{
+            background-color: rgb(10, 102, 194);
+            padding: 3px 10px 3px 10px;
+            margin: 0px;
+            border-radius: 20px;
+            border: none;
+            color: white;
+            font-weight: bold;
+        }
+        .container-12g{
+            border-style: solid;
+            border-width: 1px;
+            border-color: darkgray;
+            border-radius: 4px;
+            width: 350px;
+            padding: 0px 5px 0px 5px;
+            margin-bottom: 10px;
+        }
+        .flex-box-12g{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .profile-picture{
+            height: 60px;
+            width: 60px;
+            object-fit: cover;
+            border-radius: 30px;
+            margin: 5px 15px 5px 5px;
+        }
+        .info{
+            width: 200px;
+        }
+        .name{
+            font-weight: bold;
+            color: black;
+            margin: 0px;
+        }
+        .handle{
+            color: rgb(123, 123, 123);
+            margin: 0px;
+        }
+        .category{
+            color: rgb(123, 123, 123);
+            margin: 0px;
+        }
+        .follow-btn{
+            background-color: rgb(10, 102, 194);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 10px 8px 10px;
+        }
+        .container-12f{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: rgb(97, 88, 156);
+            border-style: solid;
+            border-width: 1px;
+            border-color: darkgray;
+            border-radius: 4px;
+            padding: 0px 15px 0px 15px;
+            margin-bottom: 10px;
+            justify-content: space-between;
+        }
+        .flex-box-home-12f{
+            color: white;
+        }
+        .search{
+            padding: 8px 0px 8px 15px;
+            border: none;
+            border-radius: 16px;
+            width: 500px;
+        }
+        .flex-box-download-btn{
+
+        }
+        .download-btn{
+            background-color: rgb(97, 88, 156);
+            color: white;
+            border-style: solid;
+            border-color: white;
+            border-width: 1px;
+            border-radius: 4px;
+            padding: 8px 12px 8px 12px;
+        }
+    </style>
+</head>
+<body>
+    12a. Create a flexbox with 2 items. Widths = 200px | 75px
+    <div style="display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;">
+        <div style="background-color: lightblue;
+        width: 200px;">
+            200px
+        </div>
+        <div style="background-color: lightpink;
+        width: 75px;">
+            75px
+        </div>
+    </div>
+    12b. A flexbox with 3 items. Widths = 50px | remaining space | 75px
+    <div style="display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;">
+        <div style="background-color: lightblue;
+        width: 50px;">
+            item1
+        </div>
+        <div style="background-color: lightpink;
+        flex: 1;">
+            item2
+        </div>
+        <div style="background-color: lightblue;
+        width: 75px;">
+            item3
+        </div>
+    </div>
+    12c. A flexbox width 4 items, spread evenly across the page
+    <div style="display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    justify-content: space-between;">
+        <div style="background-color: lightpink;
+        width: 50px;">
+            item1
+        </div>
+        <div style="background-color: lightpink;
+        width: 75px;">
+            item2
+        </div>
+        <div style="background-color: lightpink;
+        width: 75px;">
+            item3
+        </div>
+        <div style="background-color: lightpink;
+        width: 75px;">
+            item4
+        </div>
+    </div>
+    12d. Create the flexbox below with height = px and a gray border
+    <div style="display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    border-style: solid;
+    border-color: gray;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;">
+        <div style="background-color: lightpink;
+        width: 50px;">
+            item1
+        </div>
+        <div style="background-color: lightpink;
+        width: 75px;">
+            item2
+        </div>
+    </div>
+    12e. Create this design
+    <div class="container">
+        <div class="flex-box">
+            <div class="home">
+                Home
+            </div>
+            <div class="notif">
+                14
+            </div>
+        </div>
+        
+        <div class="flex-box">
+            <div class="home">
+                Notifications
+            </div>
+            <div class="notif">
+                3
+            </div>
+        </div>
+        
+        <div class="flex-box">
+            <div class="home">
+                Messages
+            </div>
+            <div class="notif">
+                5
+            </div>
+        </div>
+    </div>
+    12f. Create this design
+        <div class="container-12f">
+            <div class="flex-box-home-12f">
+                <p class="home-12f">Home</p>
+            </div>
+            <div class="flex-box-search">
+                <input class="search" type="text" placeholder="Search">
+            </div>
+            <div class="flex-box-download-btn">
+                <button class="download-btn">Download</button>
+            </div>
+        </div>
+        
+    12g. Create this design
+    <div class="container-12g">
+        <div class="flex-box-12g">
+            <img class="profile-picture" src="olli-the-polite-cat.jpg">
+            <div class="info">
+                <p class="name">
+                    Oliver
+                </p>
+                <p class="handle">
+                    the cat
+                </p>
+                <p class="category">
+                    Popular
+                </p>
+            </div>
+            <div>
+                <button class="follow-btn">
+                    Follow
+                </button>
+            </div>
+        </div>
+        <div class="flex-box-12g">
+            <img class="profile-picture" src="210602-doge-meme-nft-mb-1715-8afb7e.jpg">
+            <div class="info">
+                <p class="name">
+                    Mimi
+                </p>
+                <p class="handle">
+                    Sleepy Cat
+                </p>
+                <p class="category">
+                    Popular
+                </p>
+            </div>
+            <div>
+                <button class="follow-btn">
+                    Follow
+                </button>
+            </div>
+        </div>
+        <div class="flex-box-12g">
+            <img class="profile-picture" src="images.jfif">
+            <div class="info">
+                <p class="name">
+                    Rex
+                </p>
+                <p class="handle">
+                    Happy Bulldog
+                </p>
+                <p class="category">
+                    Popular
+                </p>
+            </div>
+            <div>
+                <button class="follow-btn">
+                    Follow
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

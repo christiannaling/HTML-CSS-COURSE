@@ -1,0 +1,239 @@
+13a. Create a flexbox with 2 elements (width 100px and 200px). Then make the first element a flexbox to create this design:
+<div style="display: flex;
+flex-direction: row;">
+    <div style="background-color: lightpink;
+    width: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;">
+        <p style="background-color: black;
+        color: white;
+        margin:  0px 30px 0px 30px;">
+            item1
+        </p>
+    </div>
+    <div style="background-color: lightblue;
+    width: 200px;">
+    </div>
+</div>
+13b.
+<div style="display: flex;
+flex-direction: row;">
+    <div style="background-color: lightpink;
+    width: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;">
+        <p>
+            
+        </p>
+    </div>
+    <div style="background-color: lightblue;
+    width: 200px;">
+    <p style="margin: 0px;">row1</p>
+        <div style="display: flex;
+        flex-direction: row;
+        color: white;
+        margin: 0px 0px 0px 0px;">
+            <p style="margin: 0px 70px 0px 0px;
+            background-color: black;">
+                row2
+            </p>
+            <p style="margin: 0px 0px 0px 65px;
+            background-color: black;">
+                row2
+            </p>
+        </div>
+    </div>
+</div>
+13d.
+<style>
+    .container{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 400px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        margin: 10px 0px 0px 10px;
+    }
+    .inbox{
+        margin: 10px 10px 10px 10px;
+        color: darkgray;
+    }
+    .email{
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        margin: 10px 10px 20px 10px;
+    }
+    .profile-picture{
+        height: 60px;
+        width: 60px;
+        object-fit: cover;
+        border: none;
+        border-radius: 30px;
+        margin-right: 15px;
+    }
+    .sender-details{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+    .sender{
+        font-weight: bold;
+    }
+    .time{
+        color: darkgray;
+    }
+    .subject{
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .message{
+        color: darkgray;
+    }
+</style>
+<div class="container">
+    <div class="inbox">
+        ALL INBOXES
+    </div>
+    <div class="email">
+        <div class="user">
+            <img class="profile-picture" src="olli-the-polite-cat.jpg">
+        </div>
+        <div>
+            <div class="sender-details">
+                <div class="sender">
+                    Chewy Promotions
+                </div>
+                <div class="time">
+                    4:58 PM
+                </div>
+            </div>
+            <div class="subject">
+                Biggest sales of the year!
+            </div>
+            <div class="message">
+                Hey there! We're writing to tell you about our...
+            </div>
+        </div>
+        
+    </div>
+</div>
+13e.
+<style>
+    .container-13e{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 400px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        margin: 10px 0px 0px 10px;
+    }
+    .email-13e{
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        margin: 10px 10px 20px 10px;
+    }
+    .inbox-13e{
+        margin: 10px 10px 10px 10px;
+        color: darkgray;
+    }
+    .profile-picture-13e{
+        height: 60px;
+        width: 60px;
+        object-fit: cover;
+        border: none;
+        border-radius: 30px;
+        margin-right: 15px;
+    }
+    .sender-details-13e{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+    .sender-13e{
+        font-weight: bold;
+    }
+    .time-13e{
+        color: darkgray;
+    }
+    .subject-13e{
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .message-13e{
+        color: darkgray;
+    }
+</style>
+<div class="container-13e">
+    <div class="inbox-13e">
+        ALL INBOXES
+    </div>
+    <div class="email-13e">
+        <div class="user-13e">
+            <img class="profile-picture-13e" src="olli-the-polite-cat.jpg">
+        </div>
+        <div class="container-inbox-info-13e">
+            <div class="sender-details-13e">
+                <div class="sender-13e">
+                    Chewy Promotions
+                </div>
+                <div class="time-13e">
+                    4:58 PM
+                </div>
+            </div>
+            <div class="subject-13e">
+                Biggest sales of the year!
+            </div>
+            <div class="message-13e">
+                Hey there! We're writing to tell you about our...
+            </div>
+        </div>
+    </div>
+    <div class="email-13e">
+        <div class="user-13e">
+            <img class="profile-picture-13e" src="210602-doge-meme-nft-mb-1715-8afb7e.jpg">
+        </div>
+        <div class="container-inbox-info-13e">
+            <div class="sender-details-13e">
+                <div class="sender-13e">
+                    Best Buy
+                </div>
+                <div class="time-13e">
+                    12:32 PM
+                </div>
+            </div>
+            <div class="subject-13e">
+                Your Best Buy eReceipt
+            </div>
+            <div class="message-13e">
+                Thank you for shopping at Best Buy. here is...
+            </div>
+        </div>
+    </div>
+    <div class="email-13e">
+        <div class="user-13e">
+            <img class="profile-picture-13e" src="images.jfif">
+        </div>
+        <div class="container-inbox-info-13e">
+            <div class="sender-details-13e">
+                <div class="sender-13e">
+                    Netflix
+                </div>
+                <div class="time-13e">
+                    9:00 AM
+                </div>
+            </div>
+            <div class="subject-13e">
+                Here's what's coming soon to Netflix
+            </div>
+            <div class="message-13e">
+                Brand new movies and shows, old favorites...
+            </div>
+        </div>
+    </div>
+</div>

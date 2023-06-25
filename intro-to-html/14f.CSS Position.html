@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .sidebar1{
+            background-color: rgb(33, 33, 33);
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .profile-picture{
+            height: 60px;
+            width: 60px;
+            object-fit: cover;
+            border: none;
+            border-radius: 30px;
+            margin-top: 5px;
+        }
+        .sidebar2{
+            background-color: rgb(55, 55, 55);
+            position: fixed;
+            left: 80px;
+            top: 0;
+            bottom: 0;
+            width: 150px;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .info{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 10px;
+            align-content: center;
+        }
+        .title{
+            color: white;
+        }
+        .icon{
+            margin-right: 15px;
+            color: lightgray;
+            font-weight: bold;
+        }
+        .videos{
+            color: lightgray;
+            margin: 16px 0px 16px 0px;
+        }
+        .updates{
+            color: lightgray;
+            margin: 16px 0px 16px 0px;
+        }
+        .faq{
+            color: lightgray;
+            margin: 16px 0px 16px 0px;
+        }
+    </style>
+</head>
+<body style="height: 3000px;">
+    <div class="sidebar1">
+        <div>
+            <img class="profile-picture" src="olli-the-polite-cat.jpg">
+        </div>
+        <div>
+            <img class="profile-picture" src="olli-the-polite-cat.jpg">
+        </div>
+        <div>
+            <img class="profile-picture" src="olli-the-polite-cat.jpg">
+        </div>
+        
+    <div class="sidebar2">
+        <div class="info">
+            <div class="title">INFO</div>
+            <div class="icon">+</div>
+        </div>
+        <div class="videos"># new-videos</div>
+        <div class="updates"># updates</div>
+        <div class="faq"># faq</div>
+    </div>
+</body>
+</html>

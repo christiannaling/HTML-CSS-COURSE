@@ -14,7 +14,8 @@ padding-left: 80px;">
     top: 0px;
     left: 0px;
     right: 0px;
-    height: 50px;">
+    height: 50px;
+    z-index: 100;">
         header
     </div>
 
@@ -26,17 +27,40 @@ padding-left: 80px;">
     top: 50px;
     width: 72px;">
         sidebar
+        <div style="background-color: red;
+        color: white;
+        position: absolute;
+        right: 2px;
+        top: 2px;">
+            x
+        </div>
     </div>
 
+    <div style="background-color: red;
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 68px;">
+        absolute
+    </div>
     <div style="background-color: lightblue;
+    position: static;
     height: 200px;
     width: 200px;">
         div1
     </div>
     <div style="background-color: lightpink;
     height: 200px;
-    width: 200px;">
+    width: 200px;
+    position: relative;">
         div2
+        <div style="background-color: black;
+            color: white;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;">
+            5:00
+        </div>
     </div>
 </body>
 </html>

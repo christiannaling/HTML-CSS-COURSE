@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15a.Position Absolute and Relative</title>
+
+    <style>
+        .close-btn{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: black;
+            color: white;
+            height: 30px;
+            width: 30px;
+            border-radius: 15px;
+            border: none;
+            padding-bottom: 4px;
+        }
+        .position-fixed{
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            background-color: darkgray;
+            height: 180px;
+            width: 320px;
+            z-index: 100;
+        }
+        .position-fixed-15c{
+            position: relative;
+            left: 35px;
+            top: 35px;
+            background-color: darkgray;
+            height: 180px;
+            width: 320px;
+
+        }
+        .close-btn-15c{
+            position: absolute;
+            top: -25px;
+            left: -25px;
+            background-color: black;
+            color: white;
+            font-size: 30px;
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            border: none;
+            padding-bottom: 6px;
+        }
+        .video-time{
+            position: absolute;
+            background-color: black;
+            color: white;
+            font-family: Arial;
+            border: none;
+            padding: 5px;
+            right: 10px;
+            bottom: 10px;
+        }
+        .image-container{
+            position: relative;
+            top: 150px;
+            left: 30px;
+            height: 300px;
+            width: 300px
+        }
+        .sony-image{
+            height: 300px;
+            width: 300px;
+        }
+        .discount{
+            background-color: black;
+            color: white;
+            font-family: Arial;
+            padding: 8px;
+            position: absolute;
+            top: 10px;
+            right: 0px;
+        }
+        .image-container-15f{
+            position: relative;
+            top: 200px;
+            left: 30px;
+            height: 300px;
+            width: 300px
+        }
+        .addtocart-container{
+            background-color: rgba(255, 255, 255, 0.582);
+            position: absolute;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            height: 80px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .addtocart-btn{
+            font-family: Arial;
+            font-weight: 600;
+            border-style: solid;
+            border-width: 2px;
+            padding: 8px 12px 8px 12px;
+        }
+    </style>
+</head>
+<body style="height: 3000px;">
+    <!-- 15a. Create a "Close Button" like this design and place it at the top-right corner of the page using position:absolute-->
+    <div>
+        <button class="close-btn">x</button>
+    </div>
+    <!--15b. Using position:fixed, stick a <div> near the bottom-right of the page-->
+    <div class="position-fixed">
+        
+    </div>
+    <!--15c. Take the "Close Button" created in exercise 15a. and put it inside the <div> created in exercise 15b.-->
+    <!--15d. Imagine exercise 15c. is a video ad in the bottom-right corner. Add a timestamp in the corner like this design-->
+    <div>
+        <div>
+            <div class="position-fixed-15c">
+                <div class="video-time">
+                    0:29
+                </div>
+                <button class="close-btn-15c">x</button>
+            </div>
+        </div>
+    </div>
+    <!--15eFind an image of clothing online and create the design below-->
+    <div>
+        <div class="image-container">
+            <img class="sony-image" src="img/sony-xperia.webp">
+            <div class="discount">20% OFF</div>
+        </div>
+    </div>
+    <!--15f.Create the design below-->
+    <div>
+        <div class="image-container-15f">
+            <img class="sony-image" src="img/sony-xperia.webp">
+            <div class="discount">20% OFF</div>
+            <div class="addtocart-container">
+                <button class="addtocart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -4,6 +4,21 @@
     column-gap: 16px;
     row-gap: 40px;
 }
+@media (min-width: 1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 700px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 480px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
 .video-title-link{
     text-decoration: none;
     color: black;
